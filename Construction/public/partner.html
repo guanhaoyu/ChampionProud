@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合作伙伴</title>
+    <link rel="stylesheet" href="css/partner.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<style type="text/css">
+    /*滚动条整体部分,必须要设置*/
+    body::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+    }
+    /*滚动条的轨道*/
+    body::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+        background-color: rgb(28,28,28);
+    }
+    /*滚动条的滑块按钮*/
+    body::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: rgb(51,51,51);
+        box-shadow: inset 0 0 5px #000;
+    }
+    /*滚动条的上下两端的按钮*/
+    body::-webkit-scrollbar-button{
+        height: 10px;
+        background-color: rgb(28,28,28);
+    }
+</style>
+<body>
+    <header>
+        <div class="nav_container">
+            <div class="header">
+                <div class="logo"><a href="./index.html"><img src="images/1490089038970.png" alt=""></a></div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./services.html">服务</a></li>
+                        <li><a href="./project.html">项目</a></li>
+                        <li><a href="./about.html">关于</a><i class="fa fa-angle-down" style="margin-left:5px;"></i>
+                            <ul class="navtwo">
+                                <li><a href="./about.html" class="two_a">集团简介</a></li>
+                                <li><a href="./404.html" class="two_a">荣誉资质</a></li>
+                                <li><a href="./team.html" class="two_a">团队精英</a></li>
+                                <li><a href="./partner.html" class="two_a">合作伙伴</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">新闻</a></li>
+                        <li><a href="./contact.html">联系</a></li>
+                        <li><a href="./tool.html">招聘</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head_container"></div>
+    </header>
+    <div id="pageTarget">
+        <div class="container">
+            <div class="container_target fade">
+                您的位置：
+                <a href="#">首页</a>
+                <span>&nbsp;&gt;&nbsp;</span>
+                <span class="about">关于</span>
+                <span>&nbsp;&gt;&nbsp;</span>
+                <a href="#" class="active">合作伙伴</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_container">
+            <div class="item_block fade"><img src="images/149147167119.png" alt="MSN"></div>
+            <div class="item_block fade1"><img src="images/149147182358.png" alt="Bing"></div>
+            <div class="item_block fade2"><img src="images/149147190379.png" alt="Google"></div>
+            <div class="item_block fade3"><img src="images/1491471542571.png" alt="Apache"></div>
+            <div class="item_block fade4"><img src="images/1491471598822.png" alt="Sun"></div>
+            <div class="item_block fade5"><img src="images/1491471726615.png" alt="Facebook"></div>
+            <div class="item_block fade"><img src="images/1491471794980.png" alt="Mozilla"></div>
+            <div class="item_block fade1"><img src="images/1491471808752.png" alt="Oracle"></div>
+            <div class="item_block fade2"><img src="images/1491471835861.png" alt="Microsoft"></div>
+            <div class="item_block fade3"><img src="images/1491471871985.png" alt="Apple"></div>
+            <div class="item_block fade4"><img src="images/1491471881514.png" alt="IBM"></div>
+            <div class="item_block fade5"><img src="images/1491471891891.png" alt="Adobe"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <p>COPYRIGHT (©) 2018 web1806丰璐瑶小组</p>
+        </div>
+    </footer>
+
+    <div class="fixed">
+        <a href="javascript:void(0);" class="message" id="message">
+            <i class="fa fa-comments-o"></i>
+        </a>
+        <a href="javascript:void(0);" class="weibo">
+            <i class="fa fa-weibo"></i>
+        </a>
+        <a href="javascript:void(0);" class="weixin" id="weixin">
+            <i class="fa fa-weixin"></i>
+        </a>
+        <a href="javascript:void(0);" class="up fade" id="up">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+    <div class="zh-weixin" id="zh_weixin">
+        <div class="weixin_box">
+            <img src="./images/wx.png" alt="">
+            <p>扫描二维码扫描微信</p>
+        </div>
+    </div>
+    <div class="message_big" id="message_big">
+        <div class="top">
+            <span>在线咨询</span>
+            <i class="fa fa-close" id="close"></i>
+        </div>
+        <a href="javascript:void(0);" class="middle">
+            <i class="fa fa-qq"></i>
+            <span>986482</span>
+        </a>
+        <div class="bottom">
+            <div class="bottom_top">
+                <i class="fa fa-phone"></i>
+                <span>联系电话</span>
+            </div>
+            <p>8888888888</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/partner.js"></script>
+</body>
+</html>

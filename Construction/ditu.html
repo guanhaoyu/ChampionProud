@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #1c1c1c;
+        }
+        #container{
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            margin-top: 70px;
+            border-radius: 10px;
+        }
+        .search{width:610px;height:56px;background:#6cf;box-shadow: 1px 2px 10px -2px #000;position:absolute;top:90px;left:405px;}
+		.search .s-text{width:490px;height:56px;border:none;outline:none;padding-left:10px;}
+		.search .s-btn{width:110px;height:56px;background:#f30;border:none;color:#fff;cursor: pointer;outline:none;}
+        .search .s-btn:hover{background:#cc2800;}
+        
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="search">
+		<input type="text" class="s-text" placeholder="请输入地址 ..." id="s-search"/><input type="button" class="s-btn" value="搜 索" />
+    </div>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=db09d6f06086a2350260ef7d0a680553&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+
+    <script>
+        //地图加载
+    var map = new AMap.Map("container", {
+        resizeEnable: true
+    });
+    //输入提示
+    var autoOptions = {
+        input: "s-search"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+
+
+    AMap.plugin('AMap.Geolocation', function() {
+        var geolocation = new AMap.Geolocation({
+            enableHighAccuracy: true,//是否使用高精度定位，默认:true
+            timeout: 10000,          //超过10秒后停止定位，默认：5s
+            buttonPosition:'RB',    //定位按钮的停靠位置
+            buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+            zoomToAccuracy: true,   //定位成功后是否自动调整地图视野到定位点
+
+        });
+        map.addControl(geolocation);
+        geolocation.getCurrentPosition(function(status,result){
+            if(status=='complete'){
+                onComplete(result)
+            }else{
+                onError(result)
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper_container{
+    width:1430px;
+    height:580px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:rgb(23,23,23);
+    border-top:1px solid rgb(35,35,35);
+    border-bottom:1px solid rgb(35,35,35);
+    display: flex;
+    position: relative;
+	/*overflow:hidden;*/
+}
+.wrapper_container ul{
+    list-style: none;
+    width: 7200px;
+    height:500px;
+    position: absolute;
+}
+.wrapper_container ul li{
+    float: left;
+}
+.wrapper_container ul li img{
+    width:1200px;
+    height:500px;
+}
+.wrapper_container a{
+    color:white;
+    position: absolute;
+    display: block;
+    width:30px;
+}
+.wrapper_container a:hover{
+    background-color: rgb(35, 35, 35)
+}
+#icon-prev{
+    top:210px;
+    left:85px;
+}
+#icon-next{
+    top:210px;
+    left:1315px;
+}
+.box1{
+    height:500px;
+    background-color:red;
+    width:115px;
+    border:30px solid rgb(23,23,23);
+    border-left:none;
+	overflow:hidden;
+    position: relative;
+}
+.box2{
+    height:500px;
+    background-color:green;
+    width:1200px;
+    position: relative;
+    overflow: hidden;
+}
+.box3{
+    height:500px;
+    background-color:blue;
+    width:115px;
+    border:30px solid rgb(23,23,23);
+    border-right:none;
+	overflow:hidden;
+    position: relative;
+}
+
+#probar{
+	height:3px;
+	width:0%;
+	position:absolute;
+	left:0;
+	top:577px;
+	background-color:white;
+}
