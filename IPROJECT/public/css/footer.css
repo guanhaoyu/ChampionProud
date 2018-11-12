@@ -1,0 +1,111 @@
+.footer-contain{
+    width: 100%;
+    height:151px;
+    margin:0px;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*margin-top: 300px;*/
+}
+.footer{
+    width: 1160px;
+    height:121px;
+    margin: 0 auto;
+    padding: 0;
+}
+.footer>h1{
+    width:160px;
+    height:68px;
+    margin: 27px 120px;
+    background-image: url(../img/spr.png);
+    background-position: -442px -836px;
+    color: rgba(255,255,255,0);
+    position: absolute;
+}
+.footer>.text{
+    width:702px;
+    height:121px;
+    position: relative;
+    left:281px;
+}
+.footer>.text>.graysign{
+    width:150px;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+}
+.graysign>a{
+    display:block;
+    width:40px;
+    height:40px;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    margin-left: 10px;
+    color:rgba(255,255,255,0);
+    background-image: url(../img/spr.png);
+}
+.graysign>a:hover{
+    background-image: url(../img/spr.png);
+}
+a.a1{
+    background-position: -476px -110px;
+}
+a.a1:hover{
+    background-position: -476px -156px;
+}
+a.a2{
+    background-position:-517px -110px;
+}
+a.a2:hover{
+    background-position: -517px -156px;
+}
+a.a3{
+    background-position: -558px -110px;
+}
+a.a3:hover{
+    background-position: -558px -156px;
+}
+a.a1>p{
+    width:166px;
+    height:18px;
+    color:black;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 3px;
+    background-color:white;
+    position: relative;
+    top:-80px;
+    left:-60px;
+    display: none;
+}
+a.a1:hover p{
+    display: block;
+}
+a.a3>div{
+    width:145px;
+    height:145px;
+    background-image:url(../img/wechat-code.jpg);
+    position: relative;
+    top: -232px;
+    left:-51px;
+    display: none;
+}
+a.a3:hover div{
+    display: block;
+}
+.text>.huanmen-word{
+    color: rgb(158,202,255);
+    font-size: 14px;
+}
+.text>.huanmen-word>a{
+    font-size: 14px;
+    color: rgb(158,202,255);
+}
+.text>.feihua{
+    font-size: 14px;
+    color:rgb(60,70,108);
+}
+.text>.feihua>a{
+    font-size: 14px;
+    color:rgb(60,70,108);
+}

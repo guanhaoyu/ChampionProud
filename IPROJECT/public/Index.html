@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/vue.js"></script>
+    <!--<link rel="stylesheet" href="css/footer.css">-->
+<title></title>
+</head>
+<body>
+<header>
+    <div class="container-fluid" style="height: 794px">
+        <div class="top">
+            <div class="nav-box">
+                <div class="login-img float-right">
+                    <div class="login">
+                        <p style="color: white"><b>登录之后可以享受更多服务哟！</b></p>
+                        <a href="#" class="btn btn-light ml-5">登录</a>
+                        <a href="#" class="btn btn-secondary ml-3">注册</a>
+                    </div>
+                </div>
+                <ul class="nav float-right">
+                    <li class="nav-item active"><a href="#" class="nav-link">官方首页</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">新闻公告</a>
+                        <ul>
+                            <li><a href="header.html">新闻资讯</a></li>
+                            <li><a href="#">游戏公告</a></li>
+                            <li><a href="#">最新活动</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">游戏资料</a>
+                        <ul>
+                            <li><a href="#">新手指南</a></li>
+                            <li><a href="#">进阶挑战</a></li>
+                            <li><a href="#">特色活动</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">同人专区</a>
+                        <ul>
+                            <li><a href="#">同人绘画</a></li>
+                            <li><a href="#">玩家COS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">游戏服务</a>
+                        <ul>
+                            <li><a href="#">游戏客服</a></li>
+                            <li><a href="#">游戏Q&A</a></li>
+                            <li><a href="#">海外充值</a></li>
+                            <li><a href="#">奖励兑换</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <table></table>
+                <a href="#">
+                    <h1>战舰少女R</h1>
+                </a>
+            </div>
+        </div>
+        <div class="big-wrapper">
+            <div id="F0_wrapper">
+                <ul style="left:0px">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="top_mask"></div>
+            <div id="F0_buttons">
+                <a href="javascript:;" index="1" class="active"></a>
+                <a href="javascript:;" index="2"></a>
+                <a href="javascript:;" index="3"></a>
+                <a href="javascript:;" index="4"></a>
+            </div>
+        </div>
+        <div class="revolution">
+            <img src="img/slide-txt.png"/>
+        </div>
+        <div class="play-btn">
+            <a href="#">
+                <img src="img/circle-play.png" alt="">
+                <img src="img/circle-outer.png" alt="">
+                <img src="img/circle-inner.png" alt="">
+                
+            </a>
+        </div>
+        <div class="loadway">下载途径</div>
+    </div>
+</header>
+<main>
+    <div class="F1">
+        <div id="F1_wrapper">
+            <div id="F1_list">
+                <ul style="left:-542px">
+                    <li><a href="#"><img src="img/img201808151052160_680x356.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201809201337290_680x356.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201809041356240_680x356.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201808151052160_680x356.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201809201337290_680x356.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div id="F1_buttons">
+                <a href="javascript:;" index="1" class="on"></a>
+                <a href="javascript:;" index="2"></a>
+                <a href="javascript:;" index="3"></a>
+            </div>
+        </div>
+        <div>
+            <a href="#"></a>
+            <ul id="tab">
+                <li><a href="#content1" data-toggle="tab" data-target="#content1"></a></li>
+                <li><a href="#content2" data-toggle="tab" data-target="#content2"></a></li>
+                <li><a href="#content3" data-toggle="tab" data-target="#content3"></a></li>
+                <li><a href="#content4" data-toggle="tab" data-target="#content4"></a></li>
+            </ul>
+            <div id="container">
+                <div id="content1">
+                    <ul>
+                        <!--<li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018年9月8日维护公告</span>
+                                <span class="time">2018-09-07</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018.9.5维护公告&战利品活动公告</span>
+                                <span class="time">2018-09-04</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">《战舰少女》随机抽取类玩法概率公式</span>
+                                <span class="time">2018-08-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">有关于部分玩家未能正常获得活动图第四关船只参与章、斩杀章的奖章补发方案</span>
+                                <span class="time">2018-08-17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018.8.17维护公告</span>
+                                <span class="time">2018-08-16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">夏日系列活动预告</span>
+                                <span class="time">2018-08-13</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div id="content2">
+                    <ul>
+                        <!--<li>
+                            <a href="#">
+                                <span class="category">【新闻】</span>
+                                <span class="title">安卓及ios新服开启&俾斯麦服维护</span>
+                                <span class="time">2016-06-20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【新闻】</span>
+                                <span class="title">iOS新服开启</span>
+                                <span class="time">2016-01-20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【新闻】</span>
+                                <span class="title">IOS正式上线！</span>
+                                <span class="time">2016-01-20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【新闻】</span>
+                                <span class="title">安卓新服开启</span>
+                                <span class="time">2016-01-15</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div id="content3">
+                    <ul>
+                        <!--<li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018年9月8日维护公告</span>
+                                <span class="time">2018-09-07</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018.9.5维护公告&战利品活动公告</span>
+                                <span class="time">2018-09-04</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">《战舰少女》随机抽取类玩法概率公式</span>
+                                <span class="time">2018-08-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">有关于部分玩家未能正常获得活动图第四关船只参与章、斩杀章的奖章补发方案</span>
+                                <span class="time">2018-08-17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018.8.17维护公告</span>
+                                <span class="time">2018-08-16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【公告】</span>
+                                <span class="title">2018.7.27封号名单</span>
+                                <span class="time">2018-07-27</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div id="content4">
+                    <ul>
+                        <!--<li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">夏日系列活动预告</span>
+                                <span class="time">2018-08-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">7月建造养成活动公告</span>
+                                <span class="time">2018-07-16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">“风乃&米娅”系列活动&夏日礼包公告</span>
+                                <span class="time">2018-07-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">世界杯大竞猜活动</span>
+                                <span class="time">2018-07-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">2018.7.6维护公告&战利品活动公告</span>
+                                <span class="time">2018-07-05</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="category">【活动】</span>
+                                <span class="title">2018.6.7维护公告&立体强袭活动公告</span>
+                                <span class="time">2018-06-05</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="F2">
+        <img src="img/new-trait-01.jpg" alt="">
+        <img src="img/new-trait-02.jpg" alt="">
+        <img src="img/new-trait-03.jpg" alt="">
+        <img src="img/new-trait-04.jpg" alt="">
+    </div>
+    <div class="F3">
+        <div>
+            <ul id="F3_tab">
+                <li><a href="#F3_content1" data-toggle="F3_tab" data-target="#F3_content1"></a></li>
+                <li><a href="#F3_content2" data-toggle="F3_tab" data-target="#F3_content2"></a></li>
+                <li><a href="#F3_content3" data-toggle="F3_tab" data-target="#F3_content3"></a></li>
+            </ul>
+            <div id="F3_container">
+                <div id="F3_content1">
+                    <ul>
+                        <!--<li><a href="#"><span class="category">【新人指南】</span><span class="title">誓约篇</span><span class="time">2017-01-04</span></a></li>
+                        <li><a href="#"><span class="category">【新人指南】</span><span class="title">船坞篇</span><span class="time">2017-01-04</span></a></li>
+                        <li><a href="#"><span class="category">【新人指南】</span><span class="title">改造篇</span><span class="time">2017-01-04</span></a></li>
+                        <li><a href="#"><span class="category">【新人指南】</span><span class="title">建造篇</span><span class="time">2017-01-04</span></a></li>
+                        <li><a href="#"><span class="category">【新人指南】</span><span class="title">出征篇</span><span class="time">2017-01-03</span></a></li>-->
+                    </ul>
+                </div>
+                <div id="F3_content2">
+                    <ul>
+                        <!--<li><a href="#"><span class="category">【进阶挑战】</span><span class="title">6-4攻略</span><span class="time">2017-01-05</span></a></li>
+                        <li><a href="#"><span class="category">【进阶挑战】</span><span class="title">6-3攻略</span><span class="time">2017-01-05</span></a></li>
+                        <li><a href="#"><span class="category">【进阶挑战】</span><span class="title">6-2攻略</span><span class="time">2016-04-20</span></a></li>
+                        <li><a href="#"><span class="category">【进阶挑战】</span><span class="title">6-1攻略</span><span class="time">2016-04-20</span></a></li>
+                        <li><a href="#"><span class="category">【进阶挑战】</span><span class="title">新手向5图攻略</span><span class="time">2016-04-19</span></a></li>-->
+                    </ul>
+                </div>
+                <div id="F3_content3">
+                    <ul>
+                        <!--<li><a href="#"><span class="category">【活动】</span>
+                        <span class="category">夏日系列活动预告</span>
+                        <span class="time">2018-08-13</span></a></li>
+                        <li><a href="#"><span class="category">【活动】</span>
+                            <span class="title">7月建造养成活动公告</span>
+                            <span class="time">2018-07-16</span></a></li>
+                        <li><a href="#"><span class="category">【活动】</span>
+                            <span class="title">“风乃&米娅”系列活动&夏日礼包公告</span>
+                            <span class="time">2018-07-13</span></a></li>
+                        <li><a href="#"><span class="category">【活动】</span>
+                            <span class="title">世界杯大竞猜活动</span>
+                            <span class="time">2018-07-06</span></a></li>
+                        <li><a href="#"><span class="category">【活动】</span>
+                            <span class="title">2018.7.6维护公告&战利品活动公告</span>
+                            <span class="time">2018-07-05</span></a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div><a href="#">更多></a></div>
+            <div><a href="#"></a></div>
+        </div>
+        <div id="F3_wrapper">
+            <div class="F3_list">
+                <ul style="left:-624px">
+                    <li><a href="#"><img src="img/img201807231904330.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201807161619310.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201807161622030.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201807161622430.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201807231904330.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img201807161619310.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div id="F3_buttons">
+                <a href="javascript:;" index="1" class="on1"></a>
+                <a href="javascript:;" index="2"></a>
+                <a href="javascript:;" index="3"></a>
+                <a href="javascript:;" index="4"></a>
+            </div>
+        </div>
+    </div>
+    <div class="F4">
+        <div>
+            <a href="#"></a>
+            <div></div>
+            <ul id="F4_tab">
+                <li><a href="#F4_content1" data-toggle="F4_tab" data-target="#F4_content1">玩家COS</a></li>
+                <li><a href="#F4_content2" data-toggle="F4_tab" data-target="#F4_content2">同人绘画</a></li>
+            </ul>
+        </div>
+        <div id="F4_container">
+            <div id="F4_content1">
+                <a href="#"><img src="img/img201706221629200_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706221628270_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706221627150_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706221625180_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706221624260_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706191848160_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706191847490_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706191845590_256x167.jpg" alt=""><div class="img-mask"></div></a>
+            </div>
+            <div id="F4_content2">
+                <a href="#"><img src="img/img201706121617310_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121616200_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121615510_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121615070_256x167.jpg" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121609310_256x167.png" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121609060_256x167.png" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121608440_256x167.png" alt=""><div class="img-mask"></div></a>
+                <a href="#"><img src="img/img201706121608220_256x167.jpg" alt=""><div class="img-mask"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="F5">
+        <ul>
+            <li>
+                <a href="#"><img src="img/img201706201235320_256x167.png.jpg" alt="萨拉托加的情书"></a>
+                <p>萨拉托加的情书</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201235110_256x167.png.jpg" alt="雪"></a>
+                <p>雪</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201234470_256x167.png.jpg" alt="新春佳节"></a>
+                <p>新春佳节</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201234310_256x167.png.jpg" alt="小巷"></a>
+                <p>小巷</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201234120_256x167.png.jpg" alt="圣诞夜"></a>
+                <p>圣诞夜</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201233470_256x167.png.jpg" alt="永恒誓约之地"></a>
+                <p>永恒誓约之地</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201233290_256x167.png.jpg" alt="钓鱼王的梦"></a>
+                <p>钓鱼王的梦</p>
+            </li>
+            <li>
+                <a href="#"><img src="img/img201706201233080_256x167.png.jpg" alt="会客室（早晨）"></a>
+                <p>会客室（早晨）</p>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer id="footer"></footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
